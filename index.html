@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rewloy Maven</title>
+<meta name="description" content="Rewloy istemci kütüphanelerinin Maven deposu. The Maven repository of the Rewloy client libraries.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1d1b24;
+    --muted: #5d5868;
+    --line: #e4e1ea;
+    --code-bg: #f5f3f8;
+    --link: #5b2ec7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121016;
+      --fg: #ecebf0;
+      --muted: #a9a4b5;
+      --line: #2c2834;
+      --code-bg: #1c1922;
+      --link: #b9a2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1rem 3rem; }
+  h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
+  p { margin: .5rem 0; }
+  .url { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: var(--muted); margin: 0 0 1.5rem; }
+  a { color: var(--link); }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .875rem; }
+  code { background: var(--code-bg); padding: .1em .3em; border-radius: 4px; }
+  pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: .75rem 1rem; overflow-x: auto; line-height: 1.45; }
+  pre code { background: none; padding: 0; }
+  table { width: 100%; border-collapse: collapse; margin: .5rem 0; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .5rem .5rem 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--muted); font-size: .875rem; }
+  td:first-child { white-space: nowrap; }
+  .en { color: var(--muted); }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .875rem; }
+  @media (max-width: 520px) { td:first-child { white-space: normal; word-break: break-all; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rewloy Maven</h1>
+  <p class="url">https://maven.rewloy.com</p>
+
+  <p>Rewloy istemci kütüphanelerinin Maven deposu. Burada yalnız yayımlanmış
+  paketler durur; kaynak kodu <a href="https://github.com/Rewloy/rewloy-kotlin">Rewloy/rewloy-kotlin</a>
+  deposundadır. Yeni sürümleri o deponun Release iş akışı ekler; yayımlanmış bir
+  sürüm sonradan değişmez.</p>
+  <p class="en" lang="en">The Maven repository of the Rewloy client libraries. It holds
+  published packages only; the source is in Rewloy/rewloy-kotlin, whose Release
+  workflow adds each new version. A published version never changes afterwards.</p>
+
+  <h2>Paketler <span class="en" lang="en">/ Artifacts</span></h2>
+  <table>
+    <thead><tr><th>Paket / Artifact</th><th></th><th>Sürümler / Versions</th></tr></thead>
+    <tbody>
+      <tr><td><code>com.rewloy:rewloy</code></td><td>Kütüphane: Kotlin, Java, Android 5.0+ <span class="en" lang="en">/ the library</span></td><td><a href="com/rewloy/rewloy/maven-metadata.xml">metadata</a></td></tr>
+      <tr><td><code>com.rewloy:rewloy-okhttp</code></td><td>İsteğe bağlı OkHttp taşıyıcısı <span class="en" lang="en">/ optional OkHttp transport</span></td><td><a href="com/rewloy/rewloy-okhttp/maven-metadata.xml">metadata</a></td></tr>
+      <tr><td><code>com.rewloy:rewloy-coroutines</code></td><td>İsteğe bağlı <code>suspend</code> ve <code>Flow</code> <span class="en" lang="en">/ optional coroutines support</span></td><td><a href="com/rewloy/rewloy-coroutines/maven-metadata.xml">metadata</a></td></tr>
+    </tbody>
+  </table>
+  <p>Değişiklikler <span class="en" lang="en">/ Changes</span>: <a href="https://github.com/Rewloy/rewloy-kotlin/blob/main/CHANGELOG.md">CHANGELOG</a></p>
+
+  <h2>Gradle (Kotlin DSL)</h2>
+  <p>Android Studio: <code>repositories</code>, <code>settings.gradle.kts</code> içinde
+  <code>dependencyResolutionManagement</code> altına yazılır.
+  <span class="en" lang="en">In Android Studio the repositories go in settings.gradle.kts, inside dependencyResolutionManagement.</span></p>
+<pre><code>repositories {
+    mavenCentral()
+    maven("https://maven.rewloy.com") {
+        content { includeGroup("com.rewloy") }
+    }
+}
+
+dependencies {
+    implementation("com.rewloy:rewloy:0.2.3")
+    implementation("com.rewloy:rewloy-okhttp:0.2.3")      // optional
+    implementation("com.rewloy:rewloy-coroutines:0.2.3")  // optional
+}</code></pre>
+
+  <h2>Gradle (Groovy)</h2>
+<pre><code>repositories {
+    mavenCentral()
+    maven {
+        url = 'https://maven.rewloy.com'
+        content { includeGroup 'com.rewloy' }
+    }
+}
+
+dependencies {
+    implementation 'com.rewloy:rewloy:0.2.3'
+}</code></pre>
+
+  <h2>Maven</h2>
+<pre><code>&lt;repositories&gt;
+  &lt;repository&gt;
+    &lt;id&gt;rewloy&lt;/id&gt;
+    &lt;url&gt;https://maven.rewloy.com&lt;/url&gt;
+    &lt;snapshots&gt;&lt;enabled&gt;false&lt;/enabled&gt;&lt;/snapshots&gt;
+  &lt;/repository&gt;
+&lt;/repositories&gt;
+
+&lt;dependency&gt;
+  &lt;groupId&gt;com.rewloy&lt;/groupId&gt;
+  &lt;artifactId&gt;rewloy&lt;/artifactId&gt;
+  &lt;version&gt;0.2.3&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+
+  <footer>
+    <p>Geliştirici belgeleri <span class="en" lang="en">/ Developer docs</span>:
+    <a href="https://rewloy.com/gelistiriciler">rewloy.com/gelistiriciler</a> ·
+    <a href="https://github.com/Rewloy/maven">GitHub</a></p>
+  </footer>
+</main>
+</body>
+</html>
