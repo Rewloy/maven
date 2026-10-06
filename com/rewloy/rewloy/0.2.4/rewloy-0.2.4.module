@@ -1,0 +1,102 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.rewloy",
+    "module": "rewloy",
+    "version": "0.2.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-0.2.4.jar",
+          "url": "rewloy-0.2.4.jar",
+          "size": 3555305,
+          "sha512": "88f8676fef3a75887309730d652ef3fe82f31b70e3ae109e71c0aa03c40f691689579c8006da6b21cb9928022e4c9e73ef820b06320bd3397301e933b097aeb3",
+          "sha256": "1d718cd6a0a840748cb423801b18fb08710b30c9cc2a33d03f2aa5deb826cbb9",
+          "sha1": "5242dbb8f3594f0a42298d14d6b02aab15b264d6",
+          "md5": "be4a6261ca8866c0c65b76deaa0cf94d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-0.2.4.jar",
+          "url": "rewloy-0.2.4.jar",
+          "size": 3555305,
+          "sha512": "88f8676fef3a75887309730d652ef3fe82f31b70e3ae109e71c0aa03c40f691689579c8006da6b21cb9928022e4c9e73ef820b06320bd3397301e933b097aeb3",
+          "sha256": "1d718cd6a0a840748cb423801b18fb08710b30c9cc2a33d03f2aa5deb826cbb9",
+          "sha1": "5242dbb8f3594f0a42298d14d6b02aab15b264d6",
+          "md5": "be4a6261ca8866c0c65b76deaa0cf94d"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "rewloy-0.2.4-sources.jar",
+          "url": "rewloy-0.2.4-sources.jar",
+          "size": 251294,
+          "sha512": "23a9ac2ec0034f348d8f0534dc45523888472d090b8ae32804bf3c24eed09c6cd0ab6f7a8bc60f940625cb5cb376de279a850c5fb1d0b5a916ab60a49d9589f0",
+          "sha256": "c2833b21ddd4904254163a92df3d6d7b543358f7e7f6be9cdad27faf8da52ce2",
+          "sha1": "f70982ea3917babf175fa65a6aa848ff057dbd1e",
+          "md5": "3dc27dfb846c77f3dd3e43d6b13abe98"
+        }
+      ]
+    }
+  ]
+}
