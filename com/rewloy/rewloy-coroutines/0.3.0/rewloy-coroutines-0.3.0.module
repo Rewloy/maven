@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.rewloy",
+    "module": "rewloy-coroutines",
+    "version": "0.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.rewloy",
+          "module": "rewloy",
+          "version": {
+            "requires": "0.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-coroutines-0.3.0.jar",
+          "url": "rewloy-coroutines-0.3.0.jar",
+          "size": 10403,
+          "sha512": "a3ae81808c7d578ce0b8723d994ef8b3632d258dcd1c5f2f72325c96b96ece47fd5b9b7a99cc23a24c1b36312c618c694df0852ad2884da79c20aade5d06a97b",
+          "sha256": "e5748f66f35f83664380207edce3e6ab69f57a3383d33f7fb4199603c7baaf48",
+          "sha1": "d5a35942671dee8c060a9b9cdfbce5ea7b10ea2c",
+          "md5": "7344d3f6f9ce9e58e2f2dfa0fe4b2f14"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.rewloy",
+          "module": "rewloy",
+          "version": {
+            "requires": "0.3.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-coroutines-0.3.0.jar",
+          "url": "rewloy-coroutines-0.3.0.jar",
+          "size": 10403,
+          "sha512": "a3ae81808c7d578ce0b8723d994ef8b3632d258dcd1c5f2f72325c96b96ece47fd5b9b7a99cc23a24c1b36312c618c694df0852ad2884da79c20aade5d06a97b",
+          "sha256": "e5748f66f35f83664380207edce3e6ab69f57a3383d33f7fb4199603c7baaf48",
+          "sha1": "d5a35942671dee8c060a9b9cdfbce5ea7b10ea2c",
+          "md5": "7344d3f6f9ce9e58e2f2dfa0fe4b2f14"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "rewloy-coroutines-0.3.0-sources.jar",
+          "url": "rewloy-coroutines-0.3.0-sources.jar",
+          "size": 1651,
+          "sha512": "3e396956325217503539a9943cb6845e685669f4349ec737256a05c3e80e7ec03f6c38bb0493697974aa245152943075ddbb748edad2b706635becb3f5d3c513",
+          "sha256": "97138cc20835bf0be7fedcaa426e99d39f006feab02c0263a7c8a8aa851c2977",
+          "sha1": "b6b99e9d99c748d5d3f07f242d19d26509b5bb43",
+          "md5": "5c92ce114e0070fab71b7af12202e8f5"
+        }
+      ]
+    }
+  ]
+}

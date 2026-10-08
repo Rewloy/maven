@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.rewloy",
+    "module": "rewloy-okhttp",
+    "version": "0.3.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.rewloy",
+          "module": "rewloy",
+          "version": {
+            "requires": "0.3.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-okhttp-0.3.0.jar",
+          "url": "rewloy-okhttp-0.3.0.jar",
+          "size": 5861,
+          "sha512": "ed1a594e44f41f26b6fe94272468b61282563c69e7bf12cf5dc27ae10971280848684d45fcba3dfca844cca613a92a4b79aa70e64ab64697dc1927ca5cb08b15",
+          "sha256": "c5e329ff8af82a5548737dcbc555f7a5ef8456641d19b097130cbf9bc7853905",
+          "sha1": "a0f7d60303b8581468ad720626396dd8479e0b23",
+          "md5": "59813bb1421916805b6b461f6b75c1e4"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.rewloy",
+          "module": "rewloy",
+          "version": {
+            "requires": "0.3.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "rewloy-okhttp-0.3.0.jar",
+          "url": "rewloy-okhttp-0.3.0.jar",
+          "size": 5861,
+          "sha512": "ed1a594e44f41f26b6fe94272468b61282563c69e7bf12cf5dc27ae10971280848684d45fcba3dfca844cca613a92a4b79aa70e64ab64697dc1927ca5cb08b15",
+          "sha256": "c5e329ff8af82a5548737dcbc555f7a5ef8456641d19b097130cbf9bc7853905",
+          "sha1": "a0f7d60303b8581468ad720626396dd8479e0b23",
+          "md5": "59813bb1421916805b6b461f6b75c1e4"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "rewloy-okhttp-0.3.0-sources.jar",
+          "url": "rewloy-okhttp-0.3.0-sources.jar",
+          "size": 2001,
+          "sha512": "3380ddbbed3ce6d7e78d85f9861ce48af327fe7f4a2a697c236136210f1b3f33bddabbe5149a5db1a0874547007116f77b3d79529df743a3f4420db05e60e74c",
+          "sha256": "dd8a8c4f2ccc7fcb307b55fe59dd66910e8888230f2cd7f011e98d39f5a54a91",
+          "sha1": "d6dfe50df9881118f17171d5c4d25a3d66cbc7f4",
+          "md5": "1ec704e1f48d14461418f0a8764ec999"
+        }
+      ]
+    }
+  ]
+}
